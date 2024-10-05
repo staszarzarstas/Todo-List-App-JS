@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent: #FFEBCD;
+    --default: rgba(0, 0, 0, 0.3)
+}
+body {
+    height: 100vh;
+    font-family: "Nunito", sans-serif;
+    background: var(--accent);
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.todo {
+    border-radius: 20px;
+    width: 90vw;
+    padding: 35px;
+    background: white;
+}
+
+.todo__content {
+
+}
+.todo__title {
+}
+.todo__title::after {
+    content: "🚀";
+}
+.todo__new {
+    --size: 50px;    
+    display: flex;
+    margin: 15px 0 32px;
+}
+.todo__new input {
+    height: var(--size);
+    margin-right: 15px;
+    font-size: 18px;
+   padding: 8px 15px;
+   border: 1px solid var(--default);
+   border-radius: 5px;
+   flex-grow: 1;
+   outline-color: var(--accent);
+
+}
+.todo__add {
+    outline-color: black;
+    cursor: pointer;
+    text-align: center;
+    height: var(--size);
+    border: 1px solid var(--default);
+    width: var(--size);
+    border-radius: var(--size);
+    line-height: var(--size);
+    font-size: 32px;
+    font-weight: 100;
+    background: var(--accent);
+    color: white;
+}
