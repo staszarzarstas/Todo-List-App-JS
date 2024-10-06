@@ -28,11 +28,7 @@ body {
     background: white;
 }
 
-.todo__content {
 
-}
-.todo__title {
-}
 .todo__title::after {
     content: "🚀";
 }
@@ -52,7 +48,8 @@ body {
    outline-color: var(--accent);
 
 }
-.todo__add {
+.todo__add,
+.todo__task-del {
     outline-color: black;
     cursor: pointer;
     text-align: center;
@@ -65,4 +62,90 @@ body {
     font-weight: 100;
     background: var(--accent);
     color: white;
+}
+
+
+.todo__list > *:not(:last-child) {
+margin-bottom: 8px;
+}
+.todo__task {
+    cursor: default;
+    --size: 35px;
+    display: flex;
+    min-height: var(--size);
+    align-items: center;
+}
+
+
+.todo__chekbox {
+    margin-right: 15px;
+}
+
+.todo__chekbox input {
+    display: none;
+}
+
+.todo__chekbox input:checked + div {
+    background: var(--accent);
+}
+.todo__chekbox input:checked + div::after {
+    display: block;
+}
+
+.todo__task__comleted .todo_task-title {
+    text-decoration: line-through;
+    color: gray;
+}  
+
+.todo__chekbox div {
+    cursor: pointer;
+    border-radius: 5px;
+    cursor: pointer;
+    --size: 28px;
+    height: var(--size);
+    width: var(--size);
+    border: 1px solid var(--accent);
+    position: relative;
+    color:  rgb(88, 86, 86);
+}
+
+.todo__chekbox div::after {
+    text-align: center;
+    content: "\2713";
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.todo_task-title {
+}
+
+.todo__task:hover .todo__task-del {
+    display: block;
+}
+  
+.todo__task-del {
+    display: none;
+    margin-left: auto;
+    margin-right: 0;
+}
+.todo__task-del i {
+    margin-top: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    transition: all ease-in-out .3s;
+}
+.todo__task-del i:hover {
+    color: rgb(133, 0, 0);
+}
+.fas {
+}
+.fa-trash {
 }

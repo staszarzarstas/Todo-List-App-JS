@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>ToDo-list</title>
 </head>
 
 <body>
@@ -13,10 +15,29 @@
         <div class="todo__content">
             <h1 class="todo__title">All tasks</h1>
             <div class="todo__new">
-                <input type="text" name="" id="" placeholder="Новая задача">
-                <button class="todo__add">+</button>
+                <input type="text" name="" id="new" placeholder="New task...">
+                <button id="add" class="todo__add">+</button>
             </div>
-            </h1>
+            <div id="tasks" class="todo__list">
+
+                <div class="todo__task todo__task__comleted">
+                    <label class="todo__chekbox">
+                        <input type="checkbox">
+                        <div></div>
+                    </label>
+                    <div class="todo_task-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
+                    <div class="todo__task-del"> <i class="fas fa-trash"></i></div>
+                </div>
+
+                <div class="todo__task">
+                    <label class="todo__chekbox">
+                        <input type="checkbox">
+                        <div></div>
+                    </label>
+                    <div class="todo_task-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
+                    <div class="todo__task-del"> <i class="fas fa-trash"></i></div>
+                </div>
+            </div>
         </div>
     </div>
 
