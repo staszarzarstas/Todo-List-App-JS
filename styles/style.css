@@ -77,27 +77,27 @@ margin-bottom: 8px;
 }
 
 
-.todo__chekbox {
+.todo__checkbox {
     margin-right: 15px;
 }
 
-.todo__chekbox input {
+.todo__checkbox input {
     display: none;
 }
 
-.todo__chekbox input:checked + div {
+.todo__checkbox input:checked + div {
     background: var(--accent);
 }
-.todo__chekbox input:checked + div::after {
+.todo__checkbox input:checked + div::after {
     display: block;
 }
 
-.todo__task__comleted .todo_task-title {
+.todo__task__completed .todo_task-title {
     text-decoration: line-through;
     color: gray;
-}  
+}
 
-.todo__chekbox div {
+.todo__checkbox div {
     cursor: pointer;
     border-radius: 5px;
     cursor: pointer;
@@ -109,7 +109,7 @@ margin-bottom: 8px;
     color:  rgb(88, 86, 86);
 }
 
-.todo__chekbox div::after {
+.todo__checkbox div::after {
     text-align: center;
     content: "\2713";
     display: none;
@@ -120,8 +120,8 @@ margin-bottom: 8px;
     bottom: 0;
 }
 
-.todo_task-title {
-}
+/* .todo_task-title {
+} */
 
 .todo__task:hover .todo__task-del {
     display: block;
@@ -145,7 +145,7 @@ margin-bottom: 8px;
 .todo__task-del i:hover {
     color: rgb(133, 0, 0);
 }
-.fas {
+/* .fas {
 }
 .fa-trash {
-}
+} */
