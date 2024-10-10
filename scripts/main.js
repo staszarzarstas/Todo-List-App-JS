@@ -44,20 +44,7 @@ function isNotHaveTask(text, list) {
     return isNotHave
 }
 
-// Удаление задачи 
 
-// const buttonDelete = document.querySelectorAll(".fas")
-// const parentTaskInfo = document.querySelectorAll('.todo__task')
-
-// function deleteTasks (removeTask) {
-//      removeTask.forEach((tasks) => {
-//             tasks.remove('div')
-//      });
-// }
-
-// buttonDelete.forEach(() => {
-//     addEventListener('click', deleteTasks(parentTaskInfo))
-// })
 
 
 // Вывод задач 
@@ -116,5 +103,16 @@ function changeTaskStatus(id, list) {
     tasksRender(list);  // Перерисовываем список задач
 }
 
+
+// Удаление задачи 
+
+const buttonDelete = document.querySelectorAll(".fas")
+const parentTaskInfo = document.querySelectorAll('.todo__task')
+
+function deleteTasks (id, list) {
+    list.forEach((task) => {
+        if()
+    })
+}
 
 
